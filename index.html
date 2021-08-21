@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <link rel="stylesheet" href="./css/main.css">
+    <title>exam(js)</title>
+</head>
+<body class="row">
+
+    <div class="users__part col-5 card">
+        <h1 class="users__part__heading text-center h2 card-header">Users</h1>
+        <ul class="users__list w-100 list-group list-group-flush"></ul>
+    </div>
+    <div class="posts__part col-4 card">
+        <h1 class="posts__part__heading text-center h2 card-header">Posts</h1>
+        <ul class="posts__list w-100 list-group list-group-flush"></ul>
+    </div>
+    <div class="comments__part col-3 card">
+        <h1 class="comments__part__heading text-center h2 card-header">Comments</h1>
+        <ul class="comments__list w-100 list-group list-group-flush"></ul>
+    </div>
+
+    <template id="user__template">
+        <li class="user list-group-item">
+            <div class="user__header d-flex justify-content-between">
+                    <h2 class="user__name h3">Leanne Graham</h2>
+                <p class="user__id h3">1</p>
+            </div>
+            <div class="user__main__part d-flex justify-content-between">
+                <div width="40%" class="user__workplace my-auto">
+                    <h3 class="user__company-name h4 ">Romaguera-Crona</h3>
+                    <p class="user__company-catchphrase fw-light">Multi-layered client-server neural-net</p>
+                    <p class="user__company-bs fw-lighter">harness real-time e-markets</p>
+                </div>
+                <div width="40%" class="user__info">
+                    <div class="user__info-username d-flex align-content-center">
+                        <img width="20px" height="20px" src="./img/user.svg" alt="" class="username__icon">
+                        <p class="user__username">Bret</p>
+                    </div>
+                    <div class="user__info-email d-flex align-content-center">
+                        <img width="20px" height="20px" src="./img/mail (1).svg" alt="" class="email__icon">
+                        <a href="mailto:Sincere@april.biz" class="user__email text-decoration-none">Sincere@april.biz</a>
+                    </div>
+                    <div class="user__info-address d-flex align-content-center">
+                        <img width="20px" height="20px" src="./img/home.svg" alt="" class="address__icon">
+                        <a href="" class="user__address text-decoration-none">
+                            Gwenborough, Kulas Light, Apt. 556
+                        </a>
+                    </div>
+                    <div class="user__info-zipcode d-flex align-content-center">
+                        <img width="20px" height="20px" src="./img/mails.svg" alt="" class="zipcode__icon">
+                        <p class="user__zipcode">92998-3874, Gwenborough</p>
+                    </div>
+                    <div class="user__info-phone d-flex align-content-center">
+                        <img width="20px" height="20px" src="./img/call.svg" alt="" class="phone__icon">
+                        <a href="tel:1-770-736-8031 x56442" class=" text-decoration-none">1-770-736-8031 x56442</a>
+                    </div>
+                    <div class="user__info-website d-flex align-content-center">
+                        <img width="20px" height="20px" src="./img/worldwide.svg" alt="" class="website__icon">
+                        <a href="http://www.hildegard.org" class="user__website text-decoration-none">hildegard.org</a>
+                    </div>
+                </div>
+            </div>
+        </li>
+    </template>
+    <template id="post__template">
+        <li class="post list-group-item">
+            <div class="post__header d-flex justify-content-between card-header">
+                <p class="post__id h3">1</p>
+                <h2 class="post__userid h3">1</h2>
+            </div>
+            <div class="post__main">
+                <h3 class="post__title h4">sunt aut facere repellat provident occaecati excepturi optio reprehenderit</h3>
+                <p class="post__body card-body">quia et suscipit\nsuscipit recusandae consequuntur expedita et cum\nreprehenderit molestiae ut ut quas totam\nnostrum rerum est autem sunt rem eveniet architecto</p>
+            </div>
+        </li>
+    </template>
+    <template id="comment__template">
+        <li class="comment list-group-item">
+            <div class="comment__header d-flex justify-content-between card-header">
+                <p class="comment__id h3">1</p>
+                <h2 class="comment__postid h3">1</h2>
+            </div>
+            <div class="comment__userinfo">
+                <h3 class="comment__name h4">sunt aut facere repellat provident occaecati excepturi optio reprehenderit</h3>
+                <div class="comment__email__part d-flex align-content-center"><img width="20px" height="20px" src="./img/mail (1).svg" alt="" class="comment__email__icon"><a href="mailto:" class="comment__email text-decoration-none">
+                </a></div>
+            </div>
+            <div class="comment__main">
+                <p class="comment__body card-body">quia et suscipit\nsuscipit recusandae consequuntur expedita et cum\nreprehenderit molestiae ut ut quas totam\nnostrum rerum est autem sunt rem eveniet architecto</p>
+            </div>
+        </li>
+    </template>
+    <script src="./js/algorithm.js"></script>
+    <script src="./js/main.js"></script>
+</body>
+</html>
